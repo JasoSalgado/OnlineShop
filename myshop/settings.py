@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     # Third-party apps
     # My apps
     'shop.apps.ShopConfig',
+    'cart.apps.CartConfig',
 ]
 
 MIDDLEWARE = [
@@ -113,3 +114,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+# Cart session
+CART_SESSION_ID = 'cart'
